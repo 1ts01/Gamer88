@@ -10,12 +10,12 @@
     <script>
         async function main() {
                                          // Liff ID
-            await liff.init({ liffId: "2000014330-e2oY5rKL" })
+            await liff.init({ liffId: "2000411794-nzkRNQMQ" })
             await liff.shareTargetPicker([
                 {
                     type: "flex",
                     // ข้อความก่อนกดอ่าน
-                    altText: "มีเครดิตฟรีมาแจก",
+                    altText: "โค้ดฟรีมาจ้า",
                     contents: 
                     // โค้ดจาก line bot designer
                     {
@@ -25,19 +25,31 @@
     "layout": "vertical",
     "contents": [
       {
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "✨ เคsดิต Free 50฿ แจกทุกวัน ✨",
+        "color": "#ffffff",
+        "align": "center"
+      },
+      {
         "type": "box",
         "layout": "vertical",
         "contents": [
           {
             "type": "image",
-            "url": "https://cdn.discordapp.com/attachments/1099696257108279347/1099696414977695855/add1.png",
+            "url": "https://media.discordapp.net/attachments/1137914093982986390/1140771721209729085/02.jpg?width=936&height=936",
             "size": "full"
           }
         ],
-        "cornerRadius": "xxl",
-        "paddingAll": "none",
-        "borderWidth": "semi-bold",
-        "borderColor": "#ffffff"
+        "borderColor": "#ffffff",
+        "borderWidth": "medium",
+        "cornerRadius": "lg",
+        "margin": "md"
       },
       {
         "type": "box",
@@ -45,30 +57,29 @@
         "contents": [
           {
             "type": "text",
-            "text": "MONEY 168",
+            "text": "⭐โปรโมชั่นสุดคุ้ม ⭐",
+            "color": "#FFFFE0",
+            "margin": "sm",
             "weight": "bold",
-            "color": "#ffffff",
-            "align": "center",
-            "margin": "md",
-            "size": "xl"
-          },
-          {
-            "type": "text",
-            "text": "แจกเครดิตฟรี 50.-",
-            "color": "#fffc00",
+            "size": "lg",
             "align": "center"
           },
           {
             "type": "text",
-            "text": "แจกทุกยูส รับได้ไม่จำกัด แจกทุกวัน",
-            "color": "#fffc00",
-            "align": "center"
+            "text": "ฝาก 19 รับ 100   ทำ 500 ถอน 100",
+            "color": "#ffffff"
+          },
+          {
+            "type": "text",
+            "text": "ฝาก 29 รับ 100  ทำ 500 ถอน 150",
+            "color": "#ffffff"
           }
-        ]
+        ],
+        "margin": "md"
       },
       {
         "type": "box",
-        "layout": "vertical",
+        "layout": "horizontal",
         "contents": [
           {
             "type": "box",
@@ -78,39 +89,62 @@
                 "type": "button",
                 "action": {
                   "type": "uri",
-                  "label": "รับเครดิตฟรี 50.-",
-                  "uri": "https://lin.ee/FZxE8Q7"
+                  "label": "รับเคsดิตฟรี",
+                  "uri": "https://lin.ee/tQR1ceg"
                 },
                 "color": "#000000"
               }
             ],
-            "backgroundColor": "#33FF00",
-            "cornerRadius": "xl",
-            "margin": "md",
-            "borderWidth": "medium",
-            "borderColor": "#ffffff",
             "background": {
               "type": "linearGradient",
               "angle": "0deg",
-              "startColor": "#fdb300",
-              "endColor": "#f8ef05"
-            }
+              "startColor": "#ffc208",
+              "endColor": "#fffe05"
+            },
+            "borderColor": "#ffffff",
+            "cornerRadius": "lg",
+            "borderWidth": "medium"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "แชร์ให้เพื่อน",
+                  "uri": "https://liff.line.me/2000411794-nzkRNQMQ"
+                },
+                "color": "#000000"
+              }
+            ],
+            "background": {
+              "type": "linearGradient",
+              "angle": "0deg",
+              "startColor": "#ffc208",
+              "endColor": "#fffe05"
+            },
+            "borderColor": "#ffffff",
+            "borderWidth": "medium",
+            "cornerRadius": "lg"
           }
         ],
-        "margin": "md"
+        "margin": "md",
+        "spacing": "md",
+        "borderWidth": "medium"
       }
     ],
-    "paddingAll": "lg",
-    "backgroundColor": "#ffffff",
     "background": {
       "type": "linearGradient",
       "angle": "0deg",
-      "startColor": "#007100",
-      "endColor": "#042304"
-    }
+      "startColor": "#3300FF",
+      "endColor": "#3300FF",
+      "centerColor": "#0099FF"
+    },
+    "paddingAll": "lg"
   }
 }
-                }
             ])
             liff.closeWindow()
         }
